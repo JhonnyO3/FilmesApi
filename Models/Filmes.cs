@@ -5,7 +5,9 @@ namespace FilmesApi.Models
 
 
     public class Filmes
-    {
+    {   
+        [Required]
+        public int Id {get; set;}
 
         [Required(ErrorMessage = "O titulo é obrigatorio!")]
         [MaxLength(100, ErrorMessage = "Tamanho maximo 100")]
